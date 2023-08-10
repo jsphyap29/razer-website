@@ -1,0 +1,57 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+    padding: $forty $zero $one;
+    background-color: $bg-complemented;
+    font-family: $font-family-bold;
+    font-size: 11px;
+    letter-spacing: $one;
+}
+
+.text-footer {
+    color: $font-p;
+    margin-right: $fifty;
+
+    @include on-event {
+        color: $razer-green;
+        text-decoration: none;
+    }
+}
+
+.img-footer {
+    width: 165px;
+}
+
+.line-footer {
+    background-color: $hr-footer;
+    margin-top: $fifty;
+    width: 65%;
+}
+
+.copyright {
+    font-family: $font-family-light;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color: $copyright;
+    letter-spacing: $one;
+}
+
+.img-social {
+    margin-right: $twelve;
+}
+
+.twitter-logo {
+    width: $twelve;
+}
+
+.facebook-logo {
+    width: $twelve;
+}
+
+.google-logo {
+    width: $seventeen;
+}

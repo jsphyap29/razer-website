@@ -1,0 +1,23 @@
+//main: ../main.scss
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1 {
+  font-family: $font-family-bold;
+}
+
+h2 {
+  font-family: $font-family-bold;
+}
+
+p {
+  font-family: $font-family-light;
+  color: $font-p;
+  font-size: 14px;
+}

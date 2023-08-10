@@ -1,0 +1,498 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the mobile home page.
+// -----------------------------------------------------------------------------
+//main: ../main.scss
+//@media screen and (max-width: 575px)
+@include respond-to ("xs") {
+    
+    .navbar {
+        background-color: $black;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        overflow: hidden;
+        width: calc(100% + 10px);
+        height: 100%;
+        z-index: 99;
+        background-color: $black;
+        top: 0px;
+        right: -10px;
+        font-size: $eighteen;
+    }
+
+    .nav-link {
+        margin-top: $ten;
+        margin-left: 20px;
+        font-family: $font-family;
+        font-weight: bold;
+    }
+
+    .buy-now {
+        padding: 20px 100px;
+        line-height: $hundred;
+        font-family: $font-family-bold;
+        font-size: 15px;
+    }
+
+    .nav-link.dropdown-toggler {
+        &::before {
+            content: "\f105";
+            font-size: 30px;
+            top: 78px;
+            right: $zero;
+            left: 92%;
+        }
+    }
+
+    .d-menu {
+        background-color: none;
+        border: none;
+    }
+
+    .dropdown-item {
+        margin-top: $ten;
+        font-family: $font-family;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .d-submenu {
+        border: none;
+        top: 180px;
+    }
+
+    .dropdown-item.dropdown-toggler {
+        &::before {
+            font-size: $twenty-five;
+            left: $hundred-percent;
+            right: $zero;
+        }
+    }
+
+    .logo {
+        width: $hundred;
+    }
+
+    .section-intro {
+        background: url(../assets/mobile-img/banner.png) no-repeat;
+        @include background-size(cover);
+        padding: $forty $thirty $sixty;
+    }
+
+    .supreme {
+        font-size: $thirty-five;
+    }
+
+    .sub-header {
+        font-size: $thirteen;
+        color: $sub-header-color;
+    }
+
+    .thx-logo {
+        width: 65px;
+        margin-top: $ten;
+    }
+
+    .chroma-logo {
+        width: 65px;
+        margin-top: $ten;
+    }
+
+    .razer-nari-logo {
+        display: none;
+    }
+
+    .bg-complemented {
+        padding: $fifty $twenty-five $twenty;
+    }
+
+    .cbc {
+        font-size: $twenty-five;
+    }
+
+    .cbc-sub-header {
+        font-size: $fifteen;
+        line-height: $twenty;
+    }
+
+    .flex-sub-header {
+        line-height: $fifteen;
+    }
+
+    .flex-sub {
+        margin-bottom: $thirty;
+        max-width: $two-fifty;
+    }
+
+    .thx-spatial-audio {
+        background: url(../assets/mobile-img/thx-banner.jpg) no-repeat;
+        @include background-size(cover);
+        padding: $fifty $thirty;
+    }
+
+    .p-thx {
+        font-size: 14px;
+        line-height: $twenty;
+    }
+
+    .thx-spatial-audio-image {
+        display: none;
+    }
+
+    .razer-mamba-wireless {
+        display: none;
+    }
+
+    .razer-blackwidow-elite {
+        display: none;
+    }
+
+    .card {
+        margin-top: 25px;
+    }
+
+    .card-deck {
+        width: 300px;
+        margin: auto;
+    }
+
+    .btn-view-all-products {
+        display: block;
+    }
+
+    .explore-other-products {
+        padding: 70px $zero $fifty;
+    }
+
+    .contact {
+        padding: $fifty $thirty $forty;
+    }
+
+    .cbc {
+        text-align: center;
+    }
+
+    .btn-form {
+        width: $hundred-percent;
+        margin-bottom: $fifty;
+    }
+
+    .img-footer {
+        width: $one-fifty;
+    }
+
+    .footer {
+        padding: $thirty $zero 1px;
+    }
+
+    .flex-footer {
+        width: 75%;
+    }
+
+    .footer-links {
+        margin: $twenty $zero $fifteen;
+        padding-right: 200px;
+        line-height: $twenty-five;
+    }
+
+    .text-footer {
+        white-space: nowrap;
+    }
+
+    .footer-img {
+        display: flex;
+        justify-content: center;
+        margin-right: 350px;
+    }
+
+    .img-social {
+        margin-right: $twenty;
+    }
+
+    .line-footer {
+        margin-top: $twenty;
+        width: 100%;
+    }
+}
+
+// @media (min-width: 576px) and (max-width: 767px)
+@include respond-to ("sm") {
+
+    .navbar {
+        background-color: $black;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        width: calc(100% + 10px);
+        height: 100%;
+        z-index: 99;
+        background-color: $black;
+        top: 0px;
+        right: -10px;
+        font-size: $eighteen;
+    }
+
+    .nav-link {
+        margin-top: $ten;
+        margin-left: 50px;
+        font-family: $font-family;
+        font-weight: bold;
+    }
+
+    .buy-now {
+        padding: 20px 100px;
+        font-family: $font-family-bold;
+        font-size: 15px;
+    }
+
+    .nav-link.dropdown-toggler {
+        &::before {
+            content: "\f105";
+            font-size: 30px;
+            top: 78px;
+            right: $zero;
+            left: 92%;
+        }
+    }
+
+    .d-menu {
+        background-color: none;
+        font-size: 16px;
+        border: none;
+    }
+
+    .d-submenu {
+        border: none;
+        top: 180px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .section-intro {
+        padding: 80px $thirty $fifty;
+    }
+
+    .supreme {
+        font-size: $forty;
+    }
+
+    .sub-header {
+        font-size: 14px;
+        color: $sub-header-color;
+    }
+
+    .thx-logo {
+        width: 80px;
+        margin-top: $ten;
+    }
+
+    .chroma-logo {
+        width: 80px;
+        margin-top: $ten;
+    }
+
+    .razer-nari-logo {
+        display: none;
+    }
+
+    .bg-complemented {
+        padding: 70px $twenty-five $twenty;
+    }
+
+    .cbc {
+        font-size: $twenty-five;
+    }
+
+    .cbc-sub-header {
+        font-size: $fifteen;
+        line-height: 25px;
+    }
+
+    .flex-sub-header {
+        line-height: $fifteen;
+        margin-right: 20px;
+    }
+
+    .flex-sub {
+        max-width: $two-fifty;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .thx-spatial-audio {
+        padding: $fifty $thirty;
+    }
+
+    .p-thx {
+        font-size: 14px;
+    }
+
+    .thx-spatial-audio-image {
+        width: 105px;
+    }
+
+    .explore-other-products {
+        padding: 70px $zero $fifty;
+    }
+
+    .card-col {
+        margin-top: 40px;
+    }
+
+    .card-deck {
+        width: 330px;
+        margin-left: 90px;
+    }
+
+    .explore-other-products .razer-mamba-wireless {
+        display: none;
+    }
+
+    .explore-other-products .razer-blackwidow-elite {
+        display: none;
+    }
+
+    .btn-view-all-products {
+        display: block;
+    }
+
+    .contact {
+        padding: $fifty $thirty $forty;
+    }
+
+    .cbc {
+        text-align: center;
+    }
+
+    .btn-form {
+        width: $hundred-percent;
+        margin-bottom: $fifty;
+    }
+
+    .img-footer {
+        width: $one-fifty;
+    }
+
+    .footer {
+        padding: $thirty $zero 1px;
+    }
+
+    .flex-footer {
+        width: 75%;
+    }
+
+    .footer-links {
+        margin: $twenty $zero $fifteen;
+        padding-right: 290px;
+        line-height: $twenty-five;
+    }
+
+    .text-footer {
+        white-space: nowrap;
+    }
+
+    .footer-img {
+        display: flex;
+        justify-content: center;
+        margin-right: 470px;
+    }
+
+    .img-social {
+        margin-right: $twenty;
+    }
+
+    .footer {
+        padding: $thirty $zero 1px;
+    }
+
+    .line-footer {
+        margin-top: $twenty;
+        width: 100%;
+    }
+}
+
+//@media (min-width: 768px) and (max-width: 991px)
+@include respond-to("md") {
+
+    .nav-link {
+        margin-left: 20px;
+    }
+
+    .nav-link.dropdown-toggler:before {
+        right: -10px;
+    }
+
+    .d-menu {
+        left: 15px;
+        padding: $zero 15px 5px $zero;
+        font-size: 12px;
+        line-height: 38px;
+    }
+
+    .d-submenu {
+        font-size: 12px;
+        line-height: 38px;
+        width: 200px;
+        top: 170px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .buy-now {
+        padding: 10px 25px;
+    }
+
+    .supreme {
+        font-size: 45px;
+    }
+
+    .razer-nari-logo {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .card-link {
+        font-size: 10px;
+    }
+
+    .img-footer {
+        width: $one-fifty;
+    }
+
+    .img-social {
+        margin-right: 10px;
+    }
+
+    .text-footer {
+        white-space: nowrap;
+        margin: 15px;
+    }
+
+    .line-footer {
+        margin-top: $twenty;
+        width: 100%;
+    }
+}

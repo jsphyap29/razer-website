@@ -1,0 +1,52 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-modal {
+    position: absolute;
+    display: none;
+    padding: $ten $thirty;
+    font-family: $font-family-bold;
+    font-size: 11px;
+    color: $black;
+    background-color: $razer-green;
+    border-radius: $forty;
+
+    @include on-event {
+        display: inline-block;
+    }
+}
+
+.img-modal {
+    @include on-event {
+        opacity: .3;
+    }
+
+    &:hover+.btn-modal {
+        display: inline-block;
+    }
+}
+
+.btn-form {
+    background-color: $razer-green;
+    color: $black;
+    padding: $ten $fifty;
+    border-radius: $forty;
+    font-size: 10px;
+    font-family: $font-family-bold;
+    letter-spacing: $one;
+}
+
+.btn-view-all-products {
+    display: none;
+    background-color: $razer-green;
+    color: $black;
+    padding: $ten $thirty;
+    border-radius: $thirty-five;
+    font-size: $ten;
+    font-family: $font-family-bold;
+    margin: auto;
+    margin-top: $twenty;
+}

@@ -1,0 +1,300 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+//main: ../main.scss
+
+.home {
+  transition: all .2s ease-in-out;
+  @include user-select(none);
+}
+
+.section-intro {
+  background: url(../assets/images/hero_image.png) center;
+  @include background-size(cover);
+  padding: $one-fifty $zero $fifty;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: relative;
+  top: $zero;
+  margin-top: $thirty;
+}
+
+.swiper-pagination-bullet {
+  padding: $five;
+  background-color: $bullet-color;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $razer-green;
+  border: $one solid $razer-green;
+}
+
+.supreme {
+  font-size: 50px;
+  color: $white;
+  max-width: $eight-hundred;
+}
+
+.cbc {
+  color: $razer-green;
+  font-size: 24px;
+}
+
+.h1-thx {
+  color: $razer-green;
+  font-size: 24px;
+  margin-bottom: $twenty;
+}
+
+.thx-logo {
+  width: $hundred;
+}
+
+.chroma-logo {
+  width: $hundred;
+}
+
+.razer-nari-logo {
+  margin-left: 710px;
+  margin-top: $fifty;
+  width: 180px;
+}
+
+.sub-header {
+  max-width: 590px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cbc-sub-header {
+  font-family: $font-family;
+  font-weight: bold;
+  line-height: $thirty;
+  font-size: 16px;
+}
+
+.flex-sub-header {
+  font-family: $font-family-bold;
+  font-size: 14px;
+  color: $white;
+  letter-spacing: $two;
+  line-height: $fifteen;
+}
+
+.flex-sub {
+  letter-spacing: $one;
+  max-width: $three-hundred;
+  font-weight: bold;
+  line-height: $eighteen;
+}
+
+.p-thx {
+  max-width: 410px;
+  letter-spacing: $one;
+  line-height: $thirty;
+  color: $p-thx;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.p-head-info {
+  font-family: $font-family-bold;
+  font-size: 12px;
+  letter-spacing: $one;
+  margin-top: $forty;
+  line-height: $zero;
+  color: $white;
+}
+
+.p-sub-head-info {
+  font-family: $font-family;
+  font-size: 12.5px;
+  letter-spacing: $one;
+  max-width: $one-fifty;
+  font-weight: bold;
+}
+
+.cbc {
+  color: $razer-green;
+  font-size: $twenty-four;
+}
+
+.img-cbc {
+  width: $forty;
+}
+
+.bg-complemented {
+  background-color: $bg-complemented;
+  padding: $hundred;
+}
+
+::-webkit-scrollbar {
+  width: $five;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset $zero $ten $twenty $navbar-color;
+  border-radius: $ten;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $razer-green;
+  border-radius: $ten;
+
+  &:hover {
+    box-shadow: inset $one $zero $twenty $navbar-color;
+  }
+}
+
+.line-cbc {
+  background-color: $hr;
+  margin-top: $fifty;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.close {
+  position: relative;
+  float: right;
+  top: 35px;
+  right: $five;
+  font-size: 35px;
+  color: $razer-green;
+
+  @include on-event {
+    outline: none;
+  }
+}
+
+.thx-spatial-audio {
+  background: url(../assets/images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg) center;
+  @include background-size(cover);
+  padding: $hundred $zero $one-fifty;
+}
+
+.thx-spatial-audio-image {
+  width: 140px;
+  margin-top: $ten;
+}
+
+.explore-other-products {
+  background-color: $bg-complemented;
+  padding: 70px $zero $hundred;
+}
+
+.card-deck {
+  margin-right: 25px;
+}
+
+.card {
+  background-color: $card-bg-color;
+  border-bottom: $two solid $razer-green;
+  width: calc(100% + 12px);
+}
+
+.card-title {
+  font-size: 13.3px;
+  color: $white;
+  font-family: $font-family-bold;
+  letter-spacing: $one;
+}
+
+.card-text {
+  font-size: 12px;
+  font-family: $font-family-light;
+  color: $card-text;
+  line-height: $fifteen;
+  font-weight: 600;
+}
+
+.card-link {
+  font-size: 11px;
+  color: $razer-green;
+  font-family: $font-family;
+  letter-spacing: $one;
+
+  @include on-event {
+    color: $green;
+    text-decoration: none;
+  }
+}
+
+.contact {
+  background-color: $contact-bg-color;
+  padding: $hundred $zero 80px;
+}
+
+.form-group input {
+  background-color: $contact-bg-color;
+  height: $forty;
+
+  @include on-event {
+    background-color: $contact-bg-color;
+    border: $one solid $razer-green;
+    outline: none;
+  }
+
+  @include placeholder {
+    font-size: 11px;
+    letter-spacing: $one;
+    font-family: $font-family;
+    color: $white;
+    opacity: .9;
+  }
+}
+
+.form-group textarea {
+  background-color: $contact-bg-color;
+  resize: none;
+  height: 120px;
+
+  @include on-event {
+    background-color: $contact-bg-color;
+    border: $one solid $razer-green;
+    outline: none;
+  }
+
+  @include placeholder {
+    font-size: 11px;
+    letter-spacing: $one;
+    font-family: $font-family;
+    color: $white;
+    opacity: .9;
+  }
+}
+
+.form-control {
+  font-size: 11px;
+  font-family: $font-family-light;
+  color: $white;
+
+  @include on-event {
+    font-size: 11px;
+    font-family: $font-family-light;
+    color: $razer-green;
+  }
+}

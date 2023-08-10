@@ -1,0 +1,148 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.navbar {
+    background-color: $navbar-color;
+    font-family: $font-family-bold;
+    font-size: 12px;
+    @include user-select(none);
+}
+
+.navbar-nav>li>a {
+    color: $navbar-font-color;
+
+    @include on-event {
+        color: $razer-green;
+    }
+}
+
+.nav-link {
+    margin-left: $fifty;
+    white-space: nowrap;
+}
+
+.logo {
+    width: 150px;
+}
+
+.buy-now {
+    background-color: $razer-green;
+    border-radius: $forty;
+    border: none;
+    color: $black;
+    padding: $thirteen 45px;
+
+    @include on-event {
+        color: $navbar-font-color;
+        opacity: .9;
+    }
+}
+
+.nav-link.dropdown-toggler {
+    &::before {
+        content: "\f107";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        font-size: $twenty-five;
+        position: absolute;
+        top: -2px;
+        right: -15px;
+    }
+}
+
+.dropdown-item.dropdown-toggler {
+    position: relative;
+    background-color: $black;
+
+    @include on-event {
+        color: $razer-green;
+    }
+}
+
+.dropdown-item.dropdown-toggler {
+    &::before {
+        content: "\f105";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        font-size: $twenty-five;
+        position: absolute;
+        right: $zero;
+    }
+}
+
+.d-menu {
+    background-color: $black;
+    top: 40px;
+    left: $forty;
+    border-color: $navbar-color;
+    padding: $ten $forty $ten $zero;
+    font-size: $fourteen;
+    line-height: 38px;
+}
+
+.d-submenu {
+    background-color: $black;
+    border-color: $navbar-color;
+    font-size: $fourteen;
+    line-height: 38px;
+    width: 226px;
+    top: 185px;
+    left: $hundred-percent;
+}
+
+.dropdown-item {
+    color: $font-p;
+
+    @include on-event {
+        background-color: $black;
+        color: $razer-green;
+    }
+}
+
+.menu {
+    display: none;
+    color: $navbar-font-color;
+    font-size: 20px;
+    margin: 18px $zero $forty 20px;
+    font-family: $font-family-bold;
+}
+
+.products {
+    display: none;
+    position: relative;
+    color: $navbar-font-color;
+    font-size: 20px;
+    margin: 18px $zero $forty 50px;
+    font-family: $font-family-bold;
+}
+
+.headset-audio {
+    position: relative;
+    display: none;
+    color: $navbar-font-color;
+    font-size: 20px;
+    margin: 18px $zero $forty 50px;
+    font-family: $font-family-bold;
+}
+
+.chevron-left {
+    position: relative;
+
+    &:before {
+        content: "\f053";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: absolute;
+        font-size: 18px;
+        top: 3px;
+        left: -30px;
+    }
+}

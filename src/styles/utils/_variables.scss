@@ -1,0 +1,111 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-family: 'Montserrat Regular';
+$font-family-bold: 'Montserrat Bold';
+$font-family-light: 'Montserrat Light';
+
+/// @type List
+$text-font-stack: $font-family,
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+$font-p: #817979;
+$white: #fff;
+$black: #000;
+$green: rgb(1, 131, 1);
+$p-thx: #978e8e;
+$sub-header-color: #96989c;
+
+/// Main brand color
+/// @type Color
+$brand-color: #E50050 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+
+/// Green
+/// @type Color
+$razer-green: #00ff00;
+
+/// Navbar 
+$navbar-color: #0f0f0f;
+$navbar-font-color: #756e6e;
+
+/// Background
+$bg-complemented: #0f0f0f;
+$contact-bg-color: #080808;
+$hr: #868686;
+
+/// Swiper 
+$bullet-color: #595959;
+
+/// Card
+$card-text: #8f8686;
+$card-bg-color: #161515;
+
+/// Footer
+$hr-footer: #242526;
+$copyright: #524f4f;
+
+//Sizes
+$zero: 0;
+$one: 1px;
+$two: 2px;
+$five: 5px;
+$ten: 10px;
+$eleven: 11px;
+$twelve: 12px;
+$thirteen: 13px;
+$fourteen: 14px;
+$fifteen: 15px;
+$sixteen: 16px;
+$seventeen: 17px;
+$eighteen: 18px;
+$twenty: 20px;
+$twenty-four: 24px;
+$twenty-five: 25px;
+$thirty: 30px;
+$thirty-five: 35px;
+$forty: 40px;
+$fifty: 50px;
+$sixty: 60px;
+$hundred: 100px;
+$one-fifty: 150px;
+$two-fifty: 250px;
+$three-hundred: 300px;
+$eight-hundred: 800px;
+$hundred-percent: 100%;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
